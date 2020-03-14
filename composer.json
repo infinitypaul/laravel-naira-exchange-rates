@@ -1,0 +1,60 @@
+{
+    "name": "infinitypaul/laravel-naira-exchange-rates",
+    "description": "Foreign exchange rates API Against The Naira",
+    "keywords": [
+        "infinitypaul",
+        "laravel-naira-exchange-rates",
+        "naira-exchange-rates",
+        "exchange-rate",
+        "forex",
+        "naira",
+        "currency converter"
+    ],
+    "homepage": "https://github.com/infinitypaul/laravel-naira-exchange-rates",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Paul Edward",
+            "email": "infinitypaul@live.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.5",
+        "infinitypaul/laravel-password-history-validation": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Infinitypaul\\LaravelNairaExchangeRates\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Infinitypaul\\LaravelNairaExchangeRates\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Infinitypaul\\LaravelNairaExchangeRates\\LaravelNairaExchangeRatesServiceProvider"
+            ],
+            "aliases": {
+                "NairaExchangeRates": "Infinitypaul\\LaravelNairaExchangeRates\\Facade\\NairaExchangeRates"
+            }
+        }
+    }
+}
