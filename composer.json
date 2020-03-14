@@ -27,7 +27,7 @@
         "infinitypaul/laravel-password-history-validation": "^1.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.5",
+        "orchestra/testbench": "^3.5"
     },
     "autoload": {
         "psr-4": {
