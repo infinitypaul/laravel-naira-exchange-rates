@@ -7,14 +7,12 @@ use Infinitypaul\NairaExchangeRates\NairaExchangeRates;
 
 class LaravelNairaExchangeRatesServiceProvider extends ServiceProvider
 {
-
     /*
     * Indicates if loading of the provider is deferred.
     *
     * @var bool
     */
     protected $defer = true;
-
 
     /**
      * Bootstrap the application services.
@@ -31,9 +29,8 @@ class LaravelNairaExchangeRatesServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/nairaExchangeRate.php' => config_path('naira-exchange-rates.php'),
+                __DIR__.'/../config/nairaExchangeRate.php' => config_path('naira-exchange-rates.php'),
             ], 'config');
-
         }
     }
 
@@ -43,18 +40,15 @@ class LaravelNairaExchangeRatesServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__ . '/../config/nairaExchangeRate.php', 'naira-exchange-rates');
-
+        $this->mergeConfigFrom(__DIR__.'/../config/nairaExchangeRate.php', 'naira-exchange-rates');
 
         $this->app->bind('laravel-naira-exchange-rates', function () {
-
             return new NairaExchangeRates(config('naira-exchange-rates.accessToken'));
-
         });
     }
 
     /**
-     * Get the services provided by the provider
+     * Get the services provided by the provider.
      * @return array
      */
     public function provides()
