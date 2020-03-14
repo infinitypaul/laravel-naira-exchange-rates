@@ -19,13 +19,6 @@ class LaravelNairaExchangeRatesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        /*
-         * Optional methods to load your package assets
-         */
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'laravel-naira-exchange-rates');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-naira-exchange-rates');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
