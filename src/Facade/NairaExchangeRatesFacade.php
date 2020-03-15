@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \Infinitypaul\LaravelNairaExchangeRates\Skeleton\SkeletonClass
  */
-class NairaExchangeRates extends Facade
+class NairaExchangeRatesFacade extends Facade
 {
     /**
      * Get the registered name of the component.
