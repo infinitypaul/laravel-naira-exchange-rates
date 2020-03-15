@@ -4,7 +4,6 @@ namespace Infinitypaul\LaravelNairaExchangeRates;
 
 use Illuminate\Support\Facades\Facade;
 
-
 class NairaExchangeRatesFacade extends Facade
 {
     /**
