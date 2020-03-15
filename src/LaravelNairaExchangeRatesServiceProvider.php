@@ -12,7 +12,7 @@ class LaravelNairaExchangeRatesServiceProvider extends ServiceProvider
     *
     * @var bool
     */
-    //protected $defer = true;
+    protected $defer = false;
 
     /**
      * Bootstrap the application services.
@@ -43,8 +43,8 @@ class LaravelNairaExchangeRatesServiceProvider extends ServiceProvider
      * Get the services provided by the provider.
      * @return array
      */
-//    public function provides()
-//    {
-//        return ['laravel-naira-exchange-rates'];
-//    }
+    public function provides()
+    {
+        return ['laravel-naira-exchange-rates'];
+    }
 }
