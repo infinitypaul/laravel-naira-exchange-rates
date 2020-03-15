@@ -27,7 +27,7 @@
         "infinitypaul/naira-exchange-rates": "^0.0.2"
     },
     "require-dev": {
-        "orchestra/testbench": "~3.5|^4.0"
+        "orchestra/testbench": "~3.5|~4.4|^5.0"
     },
     "autoload": {
         "psr-4": {
@@ -53,7 +53,7 @@
                 "Infinitypaul\\LaravelNairaExchangeRates\\LaravelNairaExchangeRatesServiceProvider"
             ],
             "aliases": {
-                "NairaExchangeRates": "Infinitypaul\\LaravelNairaExchangeRates\\Facade\\NairaExchangeRatesFacade"
+                "NairaExchangeRate": "Infinitypaul\\LaravelNairaExchangeRates\\Facade\\NairaExchangeRatesFacade"
             }
         }
     }
