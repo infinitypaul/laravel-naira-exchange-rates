@@ -13,6 +13,8 @@ env:
         - LARAVEL=5.6.*
         - LARAVEL=5.7.*
         - LARAVEL=5.8.*
+        - LARAVEL=6.8.*
+        - LARAVEL=7.0.*
 
 matrix:
     include:
@@ -24,6 +26,10 @@ matrix:
           env: LARAVEL=5.7.* COVERAGE=yes
         - php: 7.1
           env: LARAVEL=5.8.* COVERAGE=yes
+        - php: 7.2
+          env: LARAVEL=6.8.* COVERAGE=yes
+        - php: 7.2
+          env: LARAVEL=7.0.* COVERAGE=yes
     fast_finish: true
 
 before_install:

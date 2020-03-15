@@ -22,9 +22,9 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "~5.5|^6.0",
+        "illuminate/support": "~5.5|~6.5|^7.0",
         "guzzlehttp/guzzle": "^6.5",
-        "infinitypaul/laravel-password-history-validation": "^1.0"
+        "infinitypaul/naira-exchange-rates": "^0.0.2"
     },
     "require-dev": {
         "orchestra/testbench": "^3.5"
