@@ -3,7 +3,7 @@
 namespace Infinitypaul\LaravelNairaExchangeRates;
 
 use Illuminate\Support\ServiceProvider;
-use Infinitypaul\NairaExchangeRates\NairaExchangeRates;
+use Infinitypaul\NairaExchangeRates\NairaExchangeRates as NExchangeRate;
 
 class LaravelNairaExchangeRatesServiceProvider extends ServiceProvider
 {
@@ -35,7 +35,7 @@ class LaravelNairaExchangeRatesServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/nairaExchangeRate.php', 'naira-exchange-rates');
 
         $this->app->bind('laravel-naira-exchange-rates', function () {
-            return new NairaExchangeRates(config('naira-exchange-rates.accessToken'));
+            return new NExchangeRate(config('naira-exchange-rates.accessToken'));
         });
     }
 
