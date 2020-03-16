@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'accessToken' => env('NAIRA_ACCESS_TOKEN'),
+    'accessToken' => env('NAIRA_ACCESS_TOKEN', 'infinitypaul'),
 ];
