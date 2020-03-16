@@ -53,7 +53,7 @@
                 "Infinitypaul\\LaravelNairaExchangeRates\\LaravelNairaExchangeRatesServiceProvider"
             ],
             "aliases": {
-                "NairaExchangeRate": "Infinitypaul\\LaravelNairaExchangeRates\\Facade\\NairaExchangeRatesFacade"
+                "NairaExchangeRates": "Infinitypaul\\LaravelNairaExchangeRates\\Facade\\NairaExchangeRates"
             }
         }
     }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Infinitypaul\LaravelNairaExchangeRates;
+namespace Infinitypaul\LaravelNairaExchangeRates\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
-class NairaExchangeRatesFacade extends Facade
+class NairaExchangeRates extends Facade
 {
     /**
      * Get the registered name of the component..
